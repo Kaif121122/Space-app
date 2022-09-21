@@ -21,7 +21,7 @@ function Home(){
         
         </p>
       </div>
-      <Link to="/Destination" className="explore-div">
+      <Link to="/Space-app/Destination" className="explore-div">
       <div className="explore center">
         EXPLORE
       </div>
