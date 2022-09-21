@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 function Home(){
     return (
@@ -21,11 +21,11 @@ function Home(){
         
         </p>
       </div>
-      <Link to="/Space-app/Destination" className="explore-div">
+      <NavLink to="/Space-app/Destination" className="explore-div">
       <div className="explore center">
         EXPLORE
       </div>
-      </Link>
+      </NavLink>
       </main>
         </>
     )
