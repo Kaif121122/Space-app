@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url("../public/assets/home/background-home-desktop.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVBAR SECTION  */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    display: block;
+    margin: auto;
+}
+
+.nav-ul {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    padding: 4rem;
+}
+
+.navlist {
+    list-style: none;
+    padding: 0 1rem;
+}
+
+
+.nav-span {
+    font-size: 2rem;
+    color: white;
+}
+
+.navlink {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(194, 191, 191);
+    letter-spacing: 1.5px;
+    padding: 4rem 0;
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
+
+/* HOME SECTION  */
+
+.container {
+    padding: 17% 10% 8%;
+}
+
+.heading {
+    width: 60%;
+}
+
+.first-line {
+    font-size: 3rem;
+    color: rgb(194, 191, 191);
+}
+
+.second-line {
+    font-size: 15rem;
+    padding: 1rem 0 3rem;
+    color: white;
+    font-weight: 200;
+}
+
+.para {
+    font-size: 2rem;
+    width: 70%;
+    color: rgb(194, 191, 191);
+    line-height: 30px;
+}
+
+.explore-div {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+
+.explore {
+    height: 280px;
+    width: 280px;
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    font-size: 3.5rem;
+    margin-top: 7rem;
+    animation: glowing 2s infinite;
+}
+
+.explore:hover{
+    color: white;
+}
+
+@keyframes glowing {
+    0%{
+        background-color: rgb(255, 252, 252);
+        box-shadow: 0 0 50px rgb(255, 255, 255);
+    } 50%{
+        background-color:rgb(180, 180, 180);
+        box-shadow: 0 0 5px rgb(180, 180, 180);
+    } 100%{
+        background-color: rgb(168, 168, 168);
+        box-shadow: 0 0 5px rgb(167, 167, 167);
+    }
+}
+
+/* DESTINATION SECTION  */
+
+.main-container {
+    display: flex;
+    padding: 0 7%;
+    color: white;
+}
+
+
+.main-header {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 5px;
+}
+
+.header-span {
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+}
+
+.left-container {
+    width: 55%;
+    padding: 5%;
+}
+
+.dest-img {
+    display: block;
+    margin: 20% auto;
+    animation: spin 25s linear infinite;
+}
+
+@keyframes spin {
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.right-container {
+    width: 45%;
+    flex-direction: column;
+    align-items: flex-start !important;
+    padding-left: 4%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-header {
+    font-size: 10rem;
+    padding: 2rem 0;
+    font-weight: 200;
+}
+
+.right-para {
+    font-size: 2.5rem;
+    padding: 1rem 0 5rem;
+    line-height: 35px;
+    border-bottom: 1px solid white;
+    color: rgb(165, 165, 165);
+}
+
+.border-none {
+    border: none !important;
+}
+
+.distance {
+    font-size: 3rem;
+    list-style: none;
+    padding: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-r {
+    flex-direction: row !important;
+}
+
+.block {
+    display: block;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    color: rgb(165, 165, 165);
+}
+
+.dest-bottom {
+    padding: 2rem 2rem 0 0;
+}
+
+.dest-btn {
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    margin-right: 2rem;
+    cursor: pointer;
+    color: rgb(165, 165, 165);
+}
+
+/* CREW SECTION  */
+
+.crew-header {
+    padding: 5% 0 0 10%;
+}
+
+.crew-container {
+    justify-content: center;
+}
+
+.crew-btn-div {
+    margin-top: 8rem;
+}
+
+.crew-btn {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: white;
+    margin-right: 2rem;
+    cursor: pointer;
+    background-color: rgb(122, 122, 122);
+}
+
+.crew-role {
+    font-size: 3rem;
+    color: rgb(130, 130, 130);
+}
+
+.crew-name {
+    font-size: 4rem;
+    padding: 1rem 0;
+    font-weight: 200;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.pad-0 {
+    padding: 0;
+}
+
+/* TECHNOLOGY SECTION  */
+
+.tech-container {
+    padding-left: 0;
+}
+
+.tech-pad-top {
+    padding: 3% 0 3% 12%;
+}
+
+.tech-btn {
+    font-size: 3rem;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: rgb(90, 90, 90);
+    border: 1px solid white;
+    margin: 0 2rem 4rem 0;
+    cursor: pointer;
+}
+
+.tech-role {
+    font-size: 2rem;
+    color: rgb(158, 158, 158);
+}
+
+.pad-right {
+    padding-right: 2%;
+}
+
+.tech-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.hamburger {
+    position: fixed;
+    top: 65px;
+    right: 30px;
+    display: none;
+    z-index: 10;
+}
+
+/* MEDIA SECTION FOR TABLET */
+
+@media screen and (max-width:1050px) {
+    body {
+        background-image: url("../public/assets/home/background-home-tablet.jpg");
+
+    }
+
+    .logo {
+        padding-left: 3%;
+    }
+
+    .nav-ul {
+        width: 80%;
+        padding: 4rem 0;
+    }
+
+    .navlink {
+        font-size: 1rem;
+    }
+
+    .nav-span {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 15% 5% 5%;
+    }
+
+    .heading {
+        text-align: center;
+        width: 80%;
+    }
+
+    .first-line {
+        font-size: 1.8rem;
+    }
+
+    .second-line {
+        font-size: 9rem;
+    }
+
+    .para {
+        width: 100%;
+    }
+
+    .explore-div {
+        padding-right: 0;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .explore {
+        width: 230px;
+        height: 230px;
+        font-size: 2.5rem;
+    }
+
+    .main-container {
+        flex-direction: column;
+
+        padding: 0;
+    }
+
+    .left-container {
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    .right-container {
+        width: 90%;
+        align-items: center !important;
+        padding: 0 0 5%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .right-para {
+        font-size: 2.1rem;
+    }
+
+    .dest-img {
+        margin: 5% auto;
+        width: 60%;
+    }
+
+    .crew-container {
+        flex-direction: column-reverse;
+    }
+
+    .col-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .crew-img {
+        border-bottom: 2px solid white;
+        width: 60%;
+    }
+
+    .crew-btn-div {
+        justify-content: center;
+        margin: 5% auto;
+    }
+
+    .tech-container {
+        flex-direction: column !important;
+        padding: 0;
+    }
+
+    .tech-btn-div {
+        display: flex;
+    }
+
+    .tech-btn {
+        margin: 2rem;
+        font-size: 2.4rem;
+        height: 70px;
+        width: 70px;
+    }
+
+    .tech-right-container {
+        padding: 0;
+    }
+
+    .tech-img {
+        width: 60%;
+        margin: 0;
+    }
+
+    .tech-headings {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .crew-name {
+        font-size: 3rem;
+    }
+
+    .crew-role {
+        font-size: 2rem;
+    }
+}
+
+/* MEDIA SECTION FOR MOBILE  */
+
+@media screen and (max-width:530px) {
+
+    body {
+        background-image: url("../public/assets/home/background-home-mobile.jpg");
+
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .show {
+        display: flex !important;
+        width: 100% !important;
+
+    }
+
+    .nav-ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: start;
+        width: 0%;
+        z-index: 9;
+        transition: width 0.5s;
+    }
+
+
+    .navlist {
+        padding: 3rem;
+    }
+
+    .nav-span {
+        font-size: 1.8rem;
+    }
+
+    .navlink {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .heading {
+        width: 90%;
+    }
+
+    .first-line {
+        font-size: 1.5rem;
+    }
+
+    .second-line {
+        font-size: 7rem;
+    }
+
+    .para {
+        font-size: 1.4rem;
+    }
+
+    .explore {
+        width: 150px;
+        height: 150px;
+        font-size: 2rem;
+    }
+
+    .main-header {
+        font-size: 0.7rem;
+    }
+
+    .dest-btn {
+        font-size: 2rem;
+    }
+
+    .right-header {
+        font-size: 8rem;
+    }
+
+    .right-para {
+        font-size: 1.8rem;
+        line-height: 25px;
+    }
+
+    .distance {
+        font-size: 2rem;
+        padding: 0 2%;
+    }
+
+    .dest-bottom {
+        padding: 0;
+    }
+
+    .dest-img {
+        width: 70%;
+    }
+
+    .crew-btn {
+        margin: 1rem;
+    }
+
+    .crew-role {
+        font-size: 2rem;
+    }
+
+    .crew-name {
+        font-size: 2.5rem;
+    }
+
+    .tech-role {
+        font-size: 1.5rem;
+    }
+
+    .tech-img {
+        width: 90%;
+    }
+
+    .tech-btn {
+        margin: 2rem;
+        font-size: 2rem;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
+/* ///////////////////////////////(;~)////////////////////////////// */
