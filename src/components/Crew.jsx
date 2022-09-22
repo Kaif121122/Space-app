@@ -10,7 +10,7 @@ function Crew() {
     const { name, images, role, bio } = members[value]
 
     return (
-        <>
+        <div className="main">
             <div className="main-header crew-header">
                 <h1 className="left-header"><span className="header-span">02</span> MEET YOUR CREW</h1></div>
 
@@ -37,7 +37,7 @@ function Crew() {
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

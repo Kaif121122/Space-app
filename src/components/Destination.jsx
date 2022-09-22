@@ -11,7 +11,7 @@ function Destination() {
     const { name, images, description, distance, travel } = planets[value]
 
     return (
-        <>
+        <div className="main">
         
             <div className="main-container">
                 <div className="left-container">
@@ -38,7 +38,7 @@ function Destination() {
                     </ul>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -10,7 +10,7 @@ function Technology() {
     const { name, images, description } = tech[value]
 
     return (
-        <>
+        <div className="main">
 
             <div className="main-header tech-pad-top">
                 <h1 className="left-header"><span className="header-span">03</span> SPACE LAUNCH 101</h1></div>
@@ -40,7 +40,7 @@ function Technology() {
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -1,31 +1,48 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
+import logo from "../shared/logo.svg";
+import Hamburger from "../shared/icon-hamburger.svg";
+import Close from "../shared/icon-close.svg"
 
 function Navbar() {
 
   const [nav, setNav] = useState(false)
+  const [openNav, setOpenNav] = useState(false)
   const [closeNav, setCloseNav] = useState(false)
 
-  function getNav() {
+  function getOpenNav() {
     setNav(true)
-    setCloseNav(true)
+    setTimeout(() => {
+      setCloseNav(true)
+    }, 600)
+    setOpenNav(true)
   }
+
 
   function getCloseNav() {
     setCloseNav(false)
     setNav(false)
+    setTimeout(() => {
+
+      setOpenNav(false)
+    }, 600)
+
   }
 
   function closeSidebar() {
     setNav(false)
     setCloseNav(false)
+    setTimeout(() => {
+
+      setOpenNav(false)
+    }, 600)
   }
 
   return (
     <>
       <nav className="navbar">
         <div className="logo">
-          <img src="./assets/shared/logo.svg" alt="" />
+          <img src={logo} alt="" />
         </div>
         <ul className={nav ? "nav-ul show" : "nav-ul"}>
           <li className="navlist"><NavLink onClick={closeSidebar} className="navlink" end to="/Space-app"><span className="nav-span">00</span> HOME</NavLink></li>
@@ -35,8 +52,8 @@ function Navbar() {
         </ul>
 
       </nav>
-      <div className="hamburger"><img className={nav ? "none" : "show"} onClick={getNav} src="./assets/shared/icon-hamburger.svg" alt="" />
-        <img className={closeNav ? "show" : "none"} onClick={getCloseNav} src="./assets/shared/icon-close.svg" alt="" /></div>
+      <div className="hamburger"><img className={openNav ? "none" : "show"} onClick={getOpenNav} src={Hamburger} alt="" />
+        <img className={closeNav ? "show" : "none"} onClick={getCloseNav} src={Close} alt="" /></div>
     </>
 
   )

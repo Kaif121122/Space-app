@@ -24,6 +24,9 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
 }
 
 .logo {
@@ -69,8 +72,12 @@ body {
 
 /* HOME SECTION  */
 
+.main {
+    padding-top: 15%;
+}
+
 .container {
-    padding: 17% 10% 8%;
+    padding: 5% 10% 8%;
 }
 
 .heading {
@@ -116,18 +123,22 @@ body {
     animation: glowing 2s infinite;
 }
 
-.explore:hover{
+.explore:hover {
     color: white;
 }
 
 @keyframes glowing {
-    0%{
+    0% {
         background-color: rgb(255, 252, 252);
         box-shadow: 0 0 50px rgb(255, 255, 255);
-    } 50%{
-        background-color:rgb(180, 180, 180);
+    }
+
+    50% {
+        background-color: rgb(180, 180, 180);
         box-shadow: 0 0 5px rgb(180, 180, 180);
-    } 100%{
+    }
+
+    100% {
         background-color: rgb(168, 168, 168);
         box-shadow: 0 0 5px rgb(167, 167, 167);
     }
@@ -330,6 +341,11 @@ body {
 
     }
 
+
+    .main {
+        padding-top: 25%;
+    }
+
     .logo {
         padding-left: 3%;
     }
@@ -349,7 +365,7 @@ body {
 
     .container {
         flex-direction: column;
-        padding: 15% 5% 5%;
+        padding: 10% 5% 5%;
     }
 
     .heading {
@@ -372,7 +388,7 @@ body {
     .explore-div {
         padding-right: 0;
         justify-content: center;
-        width: 50%;
+        width: 100%;
     }
 
     .explore {
@@ -475,6 +491,11 @@ body {
 
     }
 
+
+    .main {
+        padding-top: 30%;
+    }
+
     .hamburger {
         display: block;
     }
@@ -532,8 +553,8 @@ body {
     }
 
     .explore {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         font-size: 2rem;
     }
 
