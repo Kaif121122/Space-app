@@ -15,13 +15,13 @@ function App() {
       <Navbar />
 
          <Routes>
-            <Route  path="/Space-app" element={<Home />} />
+            <Route  path="/" element={<Home />} />
 
-            <Route path="/Space-app/Destination" element={<Destination />} />
+            <Route path="/Destination" element={<Destination />} />
 
-            <Route path="/Space-app/Crew" element={<Crew />} />
+            <Route path="/Crew" element={<Crew />} />
 
-            <Route path="/Space-app/Technology" element={<Technology />} />
+            <Route path="/Technology" element={<Technology />} />
 
          </Routes>
       </>

@@ -21,7 +21,7 @@ function Home(){
         
         </p>
       </div>
-      <NavLink to="/Space-app/Destination" className="explore-div">
+      <NavLink to="/Destination" className="explore-div">
       <div className="explore center">
         EXPLORE
       </div>

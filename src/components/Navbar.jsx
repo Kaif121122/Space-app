@@ -45,10 +45,10 @@ function Navbar() {
           <img src={logo} alt="" />
         </div>
         <ul className={nav ? "nav-ul show" : "nav-ul"}>
-          <li className="navlist"><NavLink onClick={closeSidebar} className="navlink" end to="/Space-app"><span className="nav-span">00</span> HOME</NavLink></li>
-          <li className="navlist"><NavLink onClick={closeSidebar} className="navlink" to="/Space-app/Destination"><span className="nav-span">01</span> DESTINATION</NavLink></li>
-          <li className="navlist"><NavLink onClick={closeSidebar} className="navlink" to="/Space-app/Crew"><span className="nav-span">02</span> CREW</NavLink></li>
-          <li className="navlist"><NavLink onClick={closeSidebar} className="navlink" to="/Space-app/Technology"><span className="nav-span">03</span> TECHNOLOGY</NavLink></li>
+          <li className="navlist"><NavLink onClick={closeSidebar} className="navlink" end to="/"><span className="nav-span">00</span> HOME</NavLink></li>
+          <li className="navlist"><NavLink onClick={closeSidebar} className="navlink" to="/Destination"><span className="nav-span">01</span> DESTINATION</NavLink></li>
+          <li className="navlist"><NavLink onClick={closeSidebar} className="navlink" to="/Crew"><span className="nav-span">02</span> CREW</NavLink></li>
+          <li className="navlist"><NavLink onClick={closeSidebar} className="navlink" to="/Technology"><span className="nav-span">03</span> TECHNOLOGY</NavLink></li>
         </ul>
 
       </nav>
